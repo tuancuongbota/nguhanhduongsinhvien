@@ -1,0 +1,101 @@
+.slideshow_block_top {
+  img{
+    width: 100%;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 20%;
+    right: 20%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+
+    li {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin: 0 5px;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      opacity: .4;
+      cursor: pointer;
+      -webkit-transition: opacity .3s;
+      -o-transition: opacity .3s;
+      transition: opacity .3s;
+
+      button {
+        display: none;
+      }
+      &.slick-active{
+        opacity: 1;
+        background-color: #fff;
+      }
+    }
+  }
+  .slick-slideshow-item{
+    &:hover .slick-arrow {
+      opacity: .7;
+      -webkit-transform: translateX(0) !important;
+      -ms-transform: translateX(0) !important;
+      transform: translateX(0) !important;
+    }
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 40%;
+    bottom: 40%;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: opacity .3s, background .3s, -webkit-transform .3s, -webkit-box-shadow .3s;
+    transition: opacity .3s, background .3s, -webkit-transform .3s, -webkit-box-shadow .3s;
+    -o-transition: transform .3s, opacity .3s, background .3s, box-shadow .3s;
+    transition: transform .3s, opacity .3s, background .3s, box-shadow .3s;
+    transition: transform .3s, opacity .3s, background .3s, box-shadow .3s, -webkit-transform .3s, -webkit-box-shadow .3s;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    z-index: 1;
+    font-size: 0;
+    &::after{
+      font-family: "Font Awesome 6 Pro";
+      font-style: normal;
+      font-size: 16px;
+    }
+    &:hover{
+      background-color: #000;
+      border-color: #000;
+      opacity: 1 !important;
+    }
+  }
+
+  .slick-prev {
+    -webkit-transform: translateX(20%);
+    -ms-transform: translateX(20%);
+    transform: translateX(20%);
+    left: 2%;
+    &::after{
+      content: "\f053";
+    }
+  }
+
+  .slick-next {
+    -webkit-transform: translateX(-20%);
+    -ms-transform: translateX(-20%);
+    transform: translateX(-20%);
+    right: 2%;
+    &::after{
+      content: "\f054";
+    }
+  }
+
+ 
+}

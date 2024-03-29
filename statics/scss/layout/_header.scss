@@ -35,6 +35,17 @@
     background-color: #00552e;
     min-height: 45px;
     position: relative;
+    &.active {
+      box-shadow: 1px 1px 10px rgba(0,0,0,.15);
+      -webkit-animation: stuckMoveDown .6s;
+      animation: stuckMoveDown .6s;
+      top: 0;
+      position: fixed;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      z-index: 999;
+  }
   
     &_left {
       display: flex;
@@ -237,3 +248,50 @@
   
 }
 
+@-webkit-keyframes stuckMoveDown {
+  0% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%)
+  }
+
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+  }
+}
+
+@keyframes stuckMoveDown {
+  0% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%)
+  }
+
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+  }
+}
+
+@-webkit-keyframes stuckMoveUp {
+  0% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%)
+  }
+
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+  }
+}
+
+@keyframes stuckMoveUp {
+  0% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%)
+  }
+
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+  }
+}

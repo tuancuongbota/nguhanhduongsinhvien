@@ -13386,6 +13386,8 @@ body { background: #fff; color: #777; scroll-behavior: smooth; -webkit-font-smoo
 .home_feedback .title_bg_main h1 { font-weight: bold; font-size: 30px; background-image: -webkit-gradient(linear, left top, right top, from(#FFFA8A), to(#DDAC17)); background-image: linear-gradient(to right, #FFFA8A, #DDAC17); -webkit-background-clip: text; -webkit-text-fill-color: transparent; padding-top: 30px; }
 .home_feedback .home_feedback_item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; padding-bottom: 30px; margin-bottom: 30px; }
 .home_feedback .home_feedback_item .home_feedback_text { -webkit-box-flex: 1; -ms-flex: 1 1 0px; flex: 1 1 0px; padding-left: 16px; color: #d5d0ca; font-size: 16px; }
+.home_feedback .home_feedback_item .home_feedback_text .rating { margin-bottom: 3px; }
+.home_feedback .home_feedback_item .home_feedback_text .rating i { font-size: 14px; color: #efbc00; }
 .home_feedback .home_feedback_item .home_feedback_avatar { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; margin-bottom: 0; max-width: 200px; width: 80px; position: relative; height: 80px; }
 .home_feedback .home_feedback_item .home_feedback_avatar img { width: 100%; height: 100%; border-radius: 100%; }
 .home_feedback .home_feedback_item .home_feedback_text .home_feedback_name { color: #e6c263; font-style: italic; }

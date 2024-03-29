@@ -390,6 +390,13 @@ body{
         padding-left: 16px;
         color: #d5d0ca;
         font-size: 16px;
+        .rating{
+          margin-bottom: 3px;
+          i{
+            font-size: 14px;
+            color: #efbc00;
+          }
+        }
       }
     
       .home_feedback_avatar {

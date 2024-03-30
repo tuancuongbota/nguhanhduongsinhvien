@@ -172,13 +172,16 @@ body{
     text-align: center;
     padding-bottom: 70px;
   
-    h2 {
+    h2,h1 {
       padding-top: 30px;
       font-weight: bold;
       background-image: linear-gradient(to right, #64aa20, #286311);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-size: 30px;
+      @media only screen and (max-width: 849px){
+        font-size: 24px;
+      }
     }
   }
   .section_socail {
@@ -275,6 +278,7 @@ body{
   
     img {
       margin: auto;
+      display: block;
     }
   }
   .home_before_after {
@@ -317,6 +321,8 @@ body{
       border-radius: 10px;
       position: relative;
       overflow: hidden;
+      -webkit-box-shadow: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.22);
+      box-shadow: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.22);
       img {
         border-radius: 10px;
         width: 100%;
@@ -535,6 +541,9 @@ body{
     .home_why_title {
       padding: 10px 0;
       font-size: 18px;
+      @media screen and (max-width: 767px) {
+        font-size: 14px;
+      }
     }
   }
   
@@ -544,4 +553,7 @@ body{
     }
   }
   
+}
+.bg_page img {
+  width: 1000%;
 }

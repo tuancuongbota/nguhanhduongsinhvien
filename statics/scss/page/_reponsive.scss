@@ -207,6 +207,21 @@
         
 }
 @media screen and (max-width: 767px) { 
+  .news_list_item {
+    display: block;
+  
+    .news_list_img {
+      padding-bottom: 56%;
+      width: 100%;
+      display: block;
+    }
+  
+    .news_list_text {
+      display: block;
+      padding: 10px 0;
+    }
+  }
+  
   .section_service {
     .slick-dots {
       display: none !important;

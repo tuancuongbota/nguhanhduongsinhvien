@@ -112,6 +112,17 @@ $(document).ready(function(){
       autoplaySpeed: 2000,
     });
    }
+   if($('.slick-core').length) {
+    $('.slick-core').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true,
+      autoplay: true,
+      autoplaySpeed: 100000,
+    });
+   }
    $(".back-to-top").click(function (event) {
     $('html, body').animate({scrollTop: 0}, 1000);
     });

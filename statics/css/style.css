@@ -13756,5 +13756,9 @@ body { background: #fff; color: #777; scroll-behavior: smooth; -webkit-font-smoo
 .back-to-top:hover { background: #eac257 !important; }
 .back-to-top:hover i { color: #fff; }
 .back-to-top.active { opacity: 1; pointer-events: inherit; -webkit-transform: translateY(0); transform: translateY(0); }
-
+.nav-pagination { margin: 5px 0; font-size: 14px; } 
+.nav-pagination li { margin: 0 5px; display: inline-block; } 
+.nav-pagination li:first-child { margin-left: 0; } 
+.nav-pagination>li>span, .nav-pagination>li>a { font-size: 1.1em; display: block; height: 2.25em; line-height: 2em; text-align: center; width: auto; min-width: 2.25em; padding: 0 7px; font-weight: bolder; border-radius: 99px; border: 2px solid currentColor; -webkit-transition: all .3s; -o-transition: all .3s; transition: all .3s; vertical-align: top; color: #4d4d4d; } 
+.nav-pagination>li>.current, .nav-pagination>li>span:hover, .nav-pagination>li>a:hover { border-color: #446084; background-color: #446084; color: #fff; }
 /*# sourceMappingURL=style.css.map */
